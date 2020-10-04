@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anna0520.sm.AddAthleteActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name_of_athlete_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/name_of_athlet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_athletes_name"
+                android:inputType="textPersonName|text"
+                android:textColor="#FC050505" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/competition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/sport_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pole_sport" />
+
+            <RadioButton
+                android:id="@+id/artistic_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/artistic_pole" />
+
+            <RadioButton
+                android:id="@+id/aerial_Sport_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/aerial_sport" />
+
+            <RadioButton
+                android:id="@+id/ultra_pole_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ultra_pole" />
+
+            <RadioButton
+                android:id="@+id/para_pole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/para_pole" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIVISION" />
+
+        <Spinner
+            android:id="@+id/division_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/ath_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cathegory_athlet" />
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/paid_comp_fee_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/paid_comp_fee" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Save" />
+    </LinearLayout>
+
+</FrameLayout>
+
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/a_competition_view"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="Com"
+            android:textColor="#26075F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/main_line_division"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="div"
+            android:textColor="#26075F"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/main_line_category"
+            android:layout_width="17dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="category"
+            android:textColor="#26075F"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/main_line_name"
+            android:layout_width="21dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="name"
+            android:textColor="#26075F"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/delete_athlete"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:clickable="true"
+            app:srcCompat="@drawable/delete" />
+
+    </LinearLayout>
+
+</LinearLayout>
